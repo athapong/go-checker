@@ -1,8 +1,8 @@
 {
   "name": "athapong-go-checker",
   "owner": {
-    "name": "athapong-kaewsalapoom",
-    "email": "athapong-kaewsalapoom@scbtechx.io"
+    "name": "Athapong Kaewsalapoom",
+    "email": "athapong.k@gmail.com"
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
       "description": "Go repository quality, security, profiling, and documentation toolkit",
       "version": "0.1.0",
       "author": {
-        "name": "athapong-kaewsalapoom"
+        "name": "Athapong Kaewsalapoom"
       }
     }
   ]
