@@ -12,12 +12,8 @@
       "version": "0.1.0",
       "description": "Go repository quality, security, profiling, and documentation toolkit",
       "author": "athapong-kaewsalapoom_scbtechx",
-      "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"],
-      "repository": "https://github.com/athapong/go-checker",
-      "source": {
-        "source": "local",
-        "path": "."
-      }
+      "path": ".",
+      "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"]
     }
   ]
 }
