@@ -1,0 +1,9 @@
+{
+  "name": "go-checker",
+  "version": "0.1.0",
+  "description": "Go repository quality, security, profiling, and documentation toolkit",
+  "author": {
+    "name": "athapong-kaewsalapoom_scbtechx"
+  },
+  "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"]
+}
