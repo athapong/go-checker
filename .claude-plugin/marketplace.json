@@ -2,6 +2,10 @@
   "name": "go-checker-marketplace",
   "version": "1.0.0",
   "description": "Go repository quality, security, profiling, and documentation tools for Claude Code",
+  "owner": {
+    "name": "athapong",
+    "url": "https://github.com/athapong"
+  },
   "plugins": [
     {
       "name": "go-checker",
