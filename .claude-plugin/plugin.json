@@ -1,8 +1,8 @@
 {
   "name": "go-checker",
+  "version": "0.1.0",
   "description": "Go repository quality, security, profiling, and documentation toolkit",
   "author": {
-    "name": "athapong-kaewsalapoom",
-    "url": "https://github.com/athapong"
+    "name": "athapong-kaewsalapoom"
   }
 }

@@ -1,17 +1,21 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "athapong-go-checker",
-  "description": "Go repository quality, security, profiling, and documentation tools for Claude Code",
   "owner": {
-    "name": "athapong",
-    "url": "https://github.com/athapong"
+    "name": "athapong-kaewsalapoom",
+    "email": "athapong-kaewsalapoom@scbtechx.io"
   },
   "plugins": [
     {
       "name": "go-checker",
+      "source": {
+        "source": "github",
+        "repo": "athapong/go-checker"
+      },
       "description": "Go repository quality, security, profiling, and documentation toolkit",
-      "source": "./",
-      "category": "development"
+      "version": "0.1.0",
+      "author": {
+        "name": "athapong-kaewsalapoom"
+      }
     }
   ]
 }
