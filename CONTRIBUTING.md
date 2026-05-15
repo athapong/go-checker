@@ -159,13 +159,17 @@ All scripts source `scripts/common.sh`. Available functions:
 ### Test a script manually
 
 ```bash
-# Create a minimal Go repo
+# Clone the repo
+git clone https://github.com/athapong/go-checker
+cd go-checker
+
+# Create a minimal Go repo to test against
 mkdir -p /tmp/test-go && cd /tmp/test-go
 go mod init example.com/test
 echo 'package main; import "fmt"; func main() { fmt.Println("hi") }' > main.go
 
-# Run your script
-bash ~/Development/golang/go-checker/scripts/<tool-name>.sh ./...
+# Run your script (adjust path to where you cloned)
+bash /path/to/go-checker/scripts/<tool-name>.sh ./...
 
 # Check report created
 ls ./go-checker-reports/
@@ -174,14 +178,14 @@ ls ./go-checker-reports/
 ### Test common.sh functions
 
 ```bash
-source ~/Development/golang/go-checker/scripts/common.sh
+source /path/to/go-checker/scripts/common.sh
 timestamp        # should print YYYYMMDD-HHMMSS
 ```
 
 ### Test the plugin in Claude Code
 
 ```bash
-claude --plugin-dir ~/Development/golang/go-checker
+claude --plugin-dir /path/to/go-checker
 ```
 
 Then trigger the skill by typing its trigger phrase or running `/go-checker:<tool-name>`.
@@ -190,24 +194,18 @@ Then trigger the skill by typing its trigger phrase or running `/go-checker:<too
 
 ## Installation
 
-### Local development
+### Via GitHub (recommended)
 
 ```bash
-claude --plugin-dir ~/Development/golang/go-checker
+/plugin marketplace add athapong/go-checker
+/plugin install go-checker@athapong-go-checker
 ```
 
-### Via local marketplace
+### Via `--plugin-dir` (development)
 
 ```bash
-/plugin marketplace add ~/Development/golang/go-checker
-/plugin install go-checker@go-checker-marketplace
-```
-
-### Via Git (after pushing to remote)
-
-```bash
-/plugin marketplace add <github-user>/go-checker
-/plugin install go-checker@<github-user>-go-checker
+git clone https://github.com/athapong/go-checker
+claude --plugin-dir ./go-checker
 ```
 
 ---

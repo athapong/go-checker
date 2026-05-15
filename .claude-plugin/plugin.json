@@ -5,5 +5,7 @@
   "author": {
     "name": "athapong-kaewsalapoom_scbtechx"
   },
+  "homepage": "https://github.com/athapong/go-checker",
+  "repository": "https://github.com/athapong/go-checker",
   "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"]
 }

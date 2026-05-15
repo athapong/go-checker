@@ -23,6 +23,20 @@ Claude Code plugin for Go repository quality, security, profiling, and documenta
 | `/go-checker:docs-generate` | "documentation", "API docs", "godoc", "swagger" | godoc or swag |
 | `/go-checker:struct-layout` | "struct layout", "memory layout", "struct padding", "optimize struct" | structlayout + structlayout-optimize |
 
+## Installation
+
+```bash
+/plugin marketplace add athapong/go-checker
+/plugin install go-checker@athapong-go-checker
+```
+
+Or clone and test locally:
+
+```bash
+git clone https://github.com/athapong/go-checker
+claude --plugin-dir ./go-checker
+```
+
 ## Reports
 
 Tool output is saved to `./go-checker-reports/<tool>-YYYYMMDD-HHMMSS.txt` in the checked repository.
