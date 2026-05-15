@@ -11,7 +11,7 @@ Run golangci-lint to check Go code quality.
 2. If the user provided a package path as argument, use it. Otherwise use `./...`.
 3. Run the lint script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/lint.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/lint.sh 2>/dev/null | head -1)" [package]
    ```
 4. Show the full output to the user.
 5. Summarize: total issues found, which linters triggered, and which files have the most issues.

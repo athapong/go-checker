@@ -16,7 +16,7 @@ Generate Go test scaffolding using gotests.
 3. Wait for the user's answer and confirm the target before proceeding.
 4. Run the test scaffold script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/test-scaffold.sh <target>
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/test-scaffold.sh 2>/dev/null | head -1)" <target>
    ```
 5. Show the output. List any new `_test.go` files created.
 6. Tell the user: "Test files created with stubs for all exported functions. Fill in the test logic for each function."

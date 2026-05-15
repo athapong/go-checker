@@ -31,7 +31,7 @@ Generate Go documentation using godoc or swag.
 3. Wait for user selection.
 4. Run the docs-generate script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/docs-generate.sh <godoc|swag>
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/docs-generate.sh 2>/dev/null | head -1)" <godoc|swag>
    ```
 5. For **godoc**: Tell the user "Documentation server running at http://localhost:6060 — open that URL in your browser. Press Ctrl+C in the terminal to stop."
 6. For **swag**: Show the list of generated files. If swag fails with "no @swagger annotations", explain that swag requires `// @swagger` comments in handler functions and show a brief example annotation.

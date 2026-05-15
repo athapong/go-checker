@@ -12,7 +12,7 @@ Run govulncheck to detect known CVEs in Go dependencies.
 3. If the user provided a package path, use it. Otherwise use `./...`.
 4. Run the vuln scan script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/vuln-scan.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/vuln-scan.sh 2>/dev/null | head -1)" [package]
    ```
 5. Show the full output to the user.
 6. Summarize: number of vulnerabilities found, affected modules, and CVE IDs.

@@ -14,7 +14,7 @@ Analyze Go struct memory layout and suggest optimizations using structlayout.
    > - Struct name (e.g. `User`, `Request`)"
 3. Run the struct layout script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/struct-layout.sh <package> <StructName>
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/struct-layout.sh 2>/dev/null | head -1)" <package> <StructName>
    ```
 4. Show the full output: current layout then optimized layout.
 5. Explain the output to the user:

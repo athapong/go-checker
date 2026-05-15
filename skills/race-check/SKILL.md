@@ -11,7 +11,7 @@ Run the Go race detector on a Go repository.
 2. If the user provided a package path, use it. Otherwise use `./...`.
 3. Run the race check script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/race-check.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/race-check.sh 2>/dev/null | head -1)" [package]
    ```
 4. Show the full output to the user.
 5. If race conditions are found (output contains "DATA RACE"), highlight the goroutines involved and the conflicting access locations.

@@ -11,7 +11,7 @@ Profile CPU performance in a Go repository using go test and pprof.
 2. Determine package scope: use argument if provided, otherwise `./...`.
 3. Run the CPU profile script with default bench pattern `.`:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/profile-cpu.sh [package] [bench-pattern]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/profile-cpu.sh 2>/dev/null | head -1)" [package] [bench-pattern]
    ```
 4. Check output:
    - If output contains `NO_PROFILE_GENERATED`: no benchmarks exist. Ask the user:

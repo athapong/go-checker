@@ -16,7 +16,7 @@ Verify and/or tidy Go module dependencies.
 3. Wait for user selection.
 4. Run the deps-verify script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/deps-verify.sh <verify|tidy|both>
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/deps-verify.sh 2>/dev/null | head -1)" <verify|tidy|both>
    ```
 5. Show the full output.
 6. If `tidy` ran, tell the user: "go.mod and go.sum may have been modified. Review changes with `git diff go.mod go.sum` before committing."

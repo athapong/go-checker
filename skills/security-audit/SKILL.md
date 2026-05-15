@@ -14,7 +14,7 @@ Run a full security audit on a Go repository: gosec, govulncheck, and golangci-l
 **Tool 1: gosec**
 4. Run:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/security-scan.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/security-scan.sh 2>/dev/null | head -1)" [package]
    ```
 5. Show output. If output contains "Error" or no results section found, ask the user: "gosec encountered an issue. Continue with govulncheck? (yes/no)"
    - If no: stop and summarize what ran.
@@ -23,7 +23,7 @@ Run a full security audit on a Go repository: gosec, govulncheck, and golangci-l
 **Tool 2: govulncheck**
 6. Run:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/vuln-scan.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/vuln-scan.sh 2>/dev/null | head -1)" [package]
    ```
 7. Show output. If output contains "Skipping vuln-scan" (Go < 1.21), note it and continue. If output contains "Error", ask the user: "govulncheck encountered an issue. Continue with lint security rules? (yes/no)"
    - If no: stop and summarize.
@@ -32,7 +32,7 @@ Run a full security audit on a Go repository: gosec, govulncheck, and golangci-l
 **Tool 3: golangci-lint (security rules)**
 8. Run:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/lint.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/lint.sh 2>/dev/null | head -1)" [package]
    ```
 9. Show output.
 

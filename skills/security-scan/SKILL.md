@@ -11,7 +11,7 @@ Run gosec to detect security issues in Go code.
 2. If the user provided a package path as argument, use it. Otherwise use `./...`.
 3. Run the security scan script:
    ```
-   bash $CLAUDE_PLUGIN_ROOT/scripts/security-scan.sh [package]
+   bash "$(ls ~/.claude/plugins/cache/athapong-go-checker/go-checker/*/scripts/security-scan.sh 2>/dev/null | head -1)" [package]
    ```
 4. Show the full output to the user.
 5. Summarize: severity breakdown (HIGH/MEDIUM/LOW), CWE categories found, and affected files.
