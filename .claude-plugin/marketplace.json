@@ -15,9 +15,8 @@
       "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"],
       "repository": "https://github.com/athapong/go-checker",
       "source": {
-        "source": "git",
-        "url": "https://github.com/athapong/go-checker",
-        "branch": "main"
+        "source": "local",
+        "path": "."
       }
     }
   ]
