@@ -46,6 +46,9 @@ For each tool below, run `which <binary>`. If missing, install it:
 | gotests | `go install github.com/cweill/gotests/gotests@latest` |
 | swag | `go install github.com/swaggo/swag/cmd/swag@latest` |
 | godoc | `go install golang.org/x/tools/cmd/godoc@latest` |
+| structlayout | `go install honnef.co/go/tools/cmd/structlayout@latest` |
+| structlayout-pretty | `go install honnef.co/go/tools/cmd/structlayout-pretty@latest` |
+| structlayout-optimize | `go install honnef.co/go/tools/cmd/structlayout-optimize@latest` |
 
 **Step 4: Report**
 List all tools and their status (installed / just installed / skipped). Report any installation failures.

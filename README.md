@@ -21,6 +21,7 @@ Claude Code plugin for Go repository quality, security, profiling, and documenta
 | `/go-checker:profile-memory` | "memory profile", "heap" | go test -bench + pprof |
 | `/go-checker:deps-verify` | "dependencies", "go mod" | go mod verify/tidy |
 | `/go-checker:docs-generate` | "documentation", "API docs", "godoc", "swagger" | godoc or swag |
+| `/go-checker:struct-layout` | "struct layout", "memory layout", "struct padding", "optimize struct" | structlayout + structlayout-optimize |
 
 ## Reports
 

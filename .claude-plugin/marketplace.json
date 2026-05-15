@@ -1,0 +1,18 @@
+{
+  "name": "go-checker-marketplace",
+  "version": "1.0.0",
+  "description": "Go repository quality, security, profiling, and documentation tools for Claude Code",
+  "plugins": [
+    {
+      "name": "go-checker",
+      "version": "0.1.0",
+      "description": "Go repository quality, security, profiling, and documentation toolkit",
+      "author": "athapong-kaewsalapoom_scbtechx",
+      "keywords": ["golang", "lint", "security", "profiling", "testing", "documentation"],
+      "source": {
+        "source": "local",
+        "path": "."
+      }
+    }
+  ]
+}
